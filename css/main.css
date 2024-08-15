@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.coming-soon .desktop-pattern {
+  display: none;
+}
+.coming-soon .coming-header {
+  padding: 1.5em 2em;
+}
+.coming-soon .coming-header .header-img {
+  width: 100px;
+}
+.coming-soon .coming-img {
+  width: 100%;
+}
+.coming-soon .coming-img img {
+  width: 100%;
+}
+.coming-soon .coming-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+.coming-soon .coming-body .coming-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.4em;
+  margin-bottom: 1em;
+}
+.coming-soon .coming-body .coming-title .decorated-title {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.coming-soon .coming-body .coming-text {
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  font-size: 0.8rem;
+}
+.coming-soon .coming-body form {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.coming-soon .coming-body form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 1em;
+}
+.coming-soon .coming-body form .input-box .input {
+  width: 100%;
+  padding: 1em;
+  background: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 25px;
+}
+.coming-soon .coming-body form .input-box .input-error {
+  border: 1px solid hsl(0, 93%, 68%);
+}
+.coming-soon .coming-body form .input-box .input::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+  font-weight: bold;
+}
+.coming-soon .coming-body form .input-box .input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-weight: bold;
+}
+.coming-soon .coming-body form .input-box .icon-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9em 1.9em;
+  border-radius: 25px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+.coming-soon .coming-body form .input-box .icon-error {
+  display: none;
+  position: absolute;
+  top: 0.6em;
+  right: 4.5em;
+}
+.coming-soon .coming-body form .input-box .error-text {
+  display: none;
+  color: hsl(0, 93%, 68%);
+  margin-top: -0.5em;
+  margin-left: 1.5em;
+  font-size: 0.8rem;
+}
+.coming-soon .coming-body form .input-box .active {
+  display: block;
+}
+
+@media (min-height: 570px) {
+  .coming-soon {
+    height: 100vh;
+  }
+}
+@media (min-width: 768px) {
+  .coming-soon {
+    position: relative;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .coming-soon .coming-header {
+    padding: 3em;
+    padding-left: 7em;
+  }
+  .coming-soon .coming-header .header-img {
+    width: 400px;
+  }
+  .coming-soon .coming-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .coming-soon .coming-img img {
+    display: none;
+  }
+  .coming-soon .coming-body {
+    padding-top: 5em 0em;
+    width: 50%;
+  }
+  .coming-soon .coming-body .coming-title {
+    padding: 0em 2.2em;
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+  }
+  .coming-soon .coming-body .coming-title .decorated-title {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+  }
+  .coming-soon .coming-body .coming-text {
+    text-wrap: wrap;
+    padding: 0 7em;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .coming-soon .coming-body form {
+    margin-top: 2em;
+    width: 70%;
+    margin-bottom: 2em;
+  }
+  .coming-soon .coming-body form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .coming-soon .coming-body form .input-box .input {
+    width: 100%;
+    padding: 1em;
+    background: none;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 25px;
+  }
+  .coming-soon .coming-body form .input-box .input-error {
+    border: 1px solid hsl(0, 93%, 68%);
+  }
+  .coming-soon .coming-body form .input-box .input::-moz-placeholder {
+    color: hsl(0, 36%, 70%);
+    font-weight: bold;
+  }
+  .coming-soon .coming-body form .input-box .input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-weight: bold;
+  }
+  .coming-soon .coming-body form .input-box .icon-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.7em 1.9em;
+    border-radius: 25px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+  .coming-soon .coming-body form .input-box .icon-error {
+    display: none;
+    position: absolute;
+    top: 0.6em;
+    right: 5em;
+  }
+  .coming-soon .coming-body form .input-box .error-text {
+    display: none;
+    color: hsl(0, 93%, 68%);
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+    font-size: 0.8rem;
+  }
+  .coming-soon .coming-body form .input-box .active {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
